@@ -1,0 +1,18 @@
+{
+  "name": "notion-mail-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "apps/worker",
+    "packages/ui"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @mail/web dev",
+    "build:web": "pnpm --filter @mail/web build",
+    "dev:api": "pnpm --filter @mail/api dev",
+    "dev:worker": "pnpm --filter @mail/worker dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
